@@ -16,5 +16,20 @@ DASH obsah sa vygeneruje pomocou bitcodin služby, ktorá zakóduje súbor „ni
 
 ## Mininet prostredie a siete
 
-Mininet spustíme na virtuálnom stroji, ktorý beží na reálnom notebooku dvoma sieťovými rozhraniami, ktoré nakonfigurujeme na mód „premostenia“. 
+Mininet spustíme na virtuálnom stroji, ktorý beží na reálnom notebooku dvoma sieťovými rozhraniami, ktoré nakonfigurujeme na mód „premostenia“. K PC s VM sa následne pripoja ďalšie stroje ako server a klient. 
+Z webserveru sa následne cez HTTP protokol prenesie streamovaný obsah na klienta.
+
+## Obmeňovanie šírky pásma
+
+Náš program bude schopní ladiť šírku pásma medzi virtuálnou a reálnou sieťou v špecifikovaných časoch. Toto dosiahneme vytvorením json súborov, v ktorých špecifikujeme udalosti a časy, kedy majú nastať zmeny pásmovej šírky. 
+Zmeny sa budú vytvárať v istom vzore, napr. (obrázok)
+
+## Klient
+
+Na klientovom stroji bude bežať MPEG-DASH prehrávač. Nakonfiguruje sa tak, aby posielal aktuálnu bitovú rýchlosť prehrávaného segmentu videa. 
+
+## Návrh experimentov
+
+Prvým krokom je zvoliť si čas trvania experimentov. V zdrojovom článku si vybrali čas 120 sekúnd a skonštatovali, že je postačujúci na merania. My navrhujeme použiť 360 sekúnd, kvôli presnejším meraniam. Každých 30 sekúnd zmeníme pásmovú šírku a sledujeme, ako sa sieť dokáže prispôsobiť zmenám.
+Na overenie relevancie experimentov zoberieme výsledky zo zdrojového článku a porovnáme ich s našimi výsledkami.  
 
