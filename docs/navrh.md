@@ -20,7 +20,7 @@ Z webserveru sa následne cez HTTP protokol prenesie streamovaný obsah na klien
 
 ## Obmeňovanie šírky pásma
 
-Náš program bude schopní ladiť šírku pásma medzi virtuálnou a reálnou sieťou v špecifikovaných časoch. Toto dosiahneme vytvorením json súborov, v ktorých špecifikujeme udalosti a časy, kedy majú nastať zmeny pásmovej šírky. 
+Náš program bude schopný ladiť šírku pásma medzi virtuálnou a reálnou sieťou v špecifikovaných časoch. Toto dosiahneme vytvorením json súborov, v ktorých špecifikujeme udalosti a časy, kedy majú nastať zmeny pásmovej šírky. 
 Zmeny sa budú vytvárať v istom vzore.
 
 ![bandwidthShaping](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/bandwidthShaping.PNG)
