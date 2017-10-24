@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-![topology](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/topology.png)
 =======
 # Návrh
 
 V zadaní plánujeme postupovať podľa metodológií v článku, na ktoré sa zadanie odvoláva. Taktiež použijeme totožnú konfiguráciu a parametre pre DASH doručovania obsahu. Experimentálna zostava pozostáva z nasledujúcich elementov: 
-* Apache HTTP Server (verzia httpd-2.4.29)
-* Mininet network emulator (verzia 2.2.1)
+* Webserverebserver
+* Mininet network emulator
 * Klient PC s MPEG-DASH prehrávačom
 * Prispôsobený web rozhranie
 * Databáza
@@ -19,4 +17,4 @@ DASH obsah sa vygeneruje pomocou bitcodin služby, ktorá zakóduje súbor „ni
 ## Mininet prostredie a siete
 
 Mininet spustíme na virtuálnom stroji, ktorý beží na reálnom notebooku dvoma sieťovými rozhraniami, ktoré nakonfigurujeme na mód „premostenia“. 
->>>>>>> 3fcdae7f6933de8b438050bb00771decf0fae6db
+
