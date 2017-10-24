@@ -1,1 +1,1 @@
-![topology](https://drive.google.com/file/d/0B96uFK5h2cUEeTRLeGdKaGZDWVk/view)
+![topology](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/topology.png)
