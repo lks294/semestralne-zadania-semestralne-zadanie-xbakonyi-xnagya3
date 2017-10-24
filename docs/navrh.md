@@ -4,14 +4,14 @@ V zadaní plánujeme postupovať podľa metodológií v článku, na ktoré sa z
 * Webserverebserver
 * Mininet network emulator
 * Klient PC s MPEG-DASH prehrávačom
-* Prispôsobený web rozhranie
+* Prispôsobené web rozhranie
 * Databáza
 
 ![topology](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/topology.png)
 
 ## Príprava DASH obsahu
 
-DASH obsah sa vygeneruje pomocou bitcodin služby, ktorá zakóduje súbor „nieconajdeme.mkv“ do formátu MPEG-DASH, ktorá má široký výber bitových rýchlostí. Pre streamovanie videa použijeme nasledujúce bitové rýchlosti: 4 Mbps, 3 Mbps, 2.4 Mbps, 1.5 Mbps, 1.1 Mbps, 0.8 Mbps a 0.5 Mbps. Súbory sa nahrajú na Apache server a následne sa prenesú cez HTTP protokol. 
+DASH obsah sa vygeneruje pomocou služby, ktorá dokáže zakódovať video súbor do formátu MPEG-DASH, ktorá má široký výber bitových rýchlostí. Pre streamovanie videa použijeme nasledujúce bitové rýchlosti: 4 Mbps, 3 Mbps, 2.4 Mbps, 1.5 Mbps, 1.1 Mbps, 0.8 Mbps a 0.5 Mbps. Súbory sa nahrajú na webserver a následne sa prenesú cez HTTP protokol na klienta. 
 
 ## Mininet prostredie a siete
 
@@ -27,7 +27,7 @@ Zmeny sa budú vytvárať v istom vzore.
 
 ## Klient
 
-Na klientovom stroji bude bežať MPEG-DASH prehrávač. Nakonfiguruje sa tak, aby posielal aktuálnu bitovú rýchlosť prehrávaného segmentu videa. 
+Na klientovom stroji bude bežať MPEG-DASH prehrávač. Nakonfiguruje sa tak, aby posielal do databázy aktuálnu bitovú rýchlosť prehrávaného segmentu videa. 
 
 ## Návrh experimentov
 
