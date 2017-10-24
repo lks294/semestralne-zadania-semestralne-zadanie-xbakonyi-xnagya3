@@ -7,13 +7,14 @@ Pri experimentoch boli použité  dva rôzne emulátory sietí: Mininet a Linktr
 ## Testovanie obsahu článku
 
 
-###SDN (Software defined network)
+### SDN (Software defined network)
 Softvér definovaná sieťová technológia (SDN) je prístup k počítačovej sieti, ktorý umožňuje správcom siete programovo inicializovať, riadiť,
  meniť a spravovať chovanie siete dynamicky prostredníctvom otvorených rozhraní.
  Dokáže poskytovať abstrakciu funkcií nižšej úrovne. SDN má za cieľ riešiť skutočnosť, že statická architektúra tradičných sietí nepodporuje potreby modernejších výpočtových prostredí.
 
-(sem obrazok)
-###Apache HTTP Server
+ ![trad-SDN](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/traditionalvsSND.PNG)
+
+### Apache HTTP Server
 Je softwarový webový server s Open source licenciou pre rôzné platformy. 
 
 ###MPEG-DASH(Dynamic Adaptive Streaming over HTTP)
@@ -22,9 +23,9 @@ je adaptívna technológia streamovania dátového toku, ktorá umožňuje vysok
 Každý segment obsahuje krátky čas prehrávania obsahu, ktorý môže trvať niekoľko hodín, napríklad multimediálny obsah z youtube,netflix,twich. 
 
 
-###OpenFlow 
+### OpenFlow 
 Je komunikačný protokol, ktorý umožňuje prístup k prepojovacej rovine sieťového prepínača alebo smerovača cez sieť.
-###Mininet 
+### Mininet 
 Je emulátor siete, ktorý vytvára sieť virtuálnych hostiteľov, prepínačov, ovládačov a odkazov. Mininet hostitelia prevádzkujú štandardný sieťový softvér Linux a jeho prepínače podporujú OpenFlow pre vysoko flexibilné vlastné smerovanie a softvérové ​​siete.
 *Podporuje ľubovoľné vlastné topológie a obsahuje základnú sadu parametrizovaných topológií
 *Poskytuje priamu a rozšíriteľnú Python API pre vytváranie a experimentovanie so sieťami
