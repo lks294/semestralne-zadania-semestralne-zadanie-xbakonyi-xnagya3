@@ -1,0 +1,1 @@
+V tomto priecinku sú zdrojové súbory a deploy scripty pre mininet.

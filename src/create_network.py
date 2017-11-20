@@ -3,44 +3,39 @@ import time
 import json
 import argparse
 import os
+import re
+import sys
+import argparse
 from time import sleep
-
 from minisched import scheduler
-#from mininet.cli import CLI
 from mininet.topo import SingleSwitchTopo
 from mininet.log import setLogLevel, info, debug
 from mininet.net import Mininet
 from mininet.node import OVSController, DefaultController, Host, OVSKernelSwitch
 from mininet.link import TCLink, Intf, Link
-
-import os
-import re
-import sys
-import argparse
 from mininet.node import Node
 from mininet.cli import CLI
 from mininet.log import setLogLevel, info, error
-from mininet.net import Mininet
-from mininet.link import Intf,TCLink,Link
 from mininet.topolib import TreeTopo
 from mininet.util import quietRun
 from mininet.node import OVSKernelSwitch,Host,DefaultController
 from mininet.topo import Topo
 
 class Min( Topo ):
-    "Minimal topology with a single switch and two hosts"
+    
 
     def build( self ):
-        # Create a switch
+        # Vytvorenie switchu
         from mininet.topo import Topo
 
         s1=self.addSwitch('s1')
-        root=self.addNode('root',ip='192.168.2.254/24',inetIntf='eth0',inNamespace=False)
+        #Vytvorenie special node root
+	    root=self.addNode('root',ip='192.168.2.254/24',inetIntf='eth0',inNamespace=False)
         self.addLink(s1,root,bw=100)
         
 
 
-
+#minievents
 class Minievents(Mininet):
     def __init__(self, topo=None, switch=OVSKernelSwitch, host=Host, #minievents
                  controller=DefaultController, link=Link, intf=Intf,
@@ -100,18 +95,18 @@ class Minievents(Mininet):
 
 if __name__ == '__main__':
     setLogLevel( 'info' )
-    os.system("sudo ifconfig eth0 192.168.1.254 netmask 255.255.255.0 up")
+    os.system("sudo ifconfig eth0 192.168.1.254 netmask 255.255.255.0 up") #OS routing
     os.system("sudo ip route add 192.168.2.254 dev eth0")
-    os.system("sudo sysctl net.ipv4.conf.all.forwarding=1")
-    parser = argparse.ArgumentParser()
+    os.system("sudo sysctl net.ipv4.conf.all.forwarding=1") #OS forwarding
+    parser = argparse.ArgumentParser() # minievents
     parser.add_argument("--events",default="bw.json", help="json file with event descriptions")
     args = parser.parse_args()
     setLogLevel('info')
-    intfName ='eth1'
+    intfName ='eth1' 
     net = Mininet( topo=Min( ),link=TCLink, events_file=args.events)
 
     switch = net.switches[ 0 ]
-    _intf = Intf( intfName, node=switch)
+    _intf = Intf( intfName, node=switch)# pridanie eth1 interface do topologie
     os.system("sudo sysctl net.ipv4.conf.all.forwarding=1")
     link1=net.links[0]
     print(link1)
