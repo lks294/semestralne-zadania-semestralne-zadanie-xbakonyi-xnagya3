@@ -1,0 +1,38 @@
+[
+ {
+    "time": 0,
+    "type": "editLink",
+    "params": {
+      "src": "s1",
+      "dst": "root",
+      "bw": 1
+    }
+  },
+ {
+    "time": 30,
+    "type": "editLink",
+    "params": {
+      "src": "s1",
+      "dst": "root",
+      "bw": 2
+    }
+  },
+  {
+    "time": 60,
+    "type": "editLink",
+    "params": {
+      "src": "s1",
+      "dst": "root",
+      "bw": 3
+    }
+  },
+  {
+    "time": 90,
+    "type": "editLink",
+    "params": {
+      "src": "s1",
+      "dst": "root",
+      "bw": 1
+    }
+  }
+]
