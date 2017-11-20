@@ -4,7 +4,11 @@ Cieľom nášho prototypu bolo vytvorenie funkčnej siete kombináciou Mininetu 
 
 ## PC0 - Virtuálny stroj - Mininet
 
-Vytvorenie a nastavenie siete realizuje skript create_network.py. IP adresy boli nastavené podľa vedeckého článku, ktoré vidíme v tabuľke 1. Na smerovanie využívame OS Routing, t.j. smerovanie operačného systému Linux. Taktiež sa vyžaduje povolenie forwardingu na OS, aby sme dokázali prepojiť reálnu sieť so sieťou v emulátori mininet. Skript vytvorí TClink link1, pomocou ktorého dokážeme meniť priepustnosť linky. Zmenu v stanovených časových bodoch zabezpečuje framework minievents, do ktorého vstupuje ako argument JSON súbor s názvom bw.json, kde sú špecifikované udalosti „editlink“ a parametre ako linka ktorá sa má meniť, čas, kedy sa má daná udalosť nastať a hodnota priepustnosti, ktorá sa má nastaviť v link1.
+Vytvorenie a nastavenie siete realizuje skript create_network.py. IP adresy boli nastavené podľa vedeckého článku, ktoré vidíme v tabuľke 1.
+
+![IP](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/IP.PNG)
+
+ Na smerovanie využívame OS Routing, t.j. smerovanie operačného systému Linux. Taktiež sa vyžaduje povolenie forwardingu na OS, aby sme dokázali prepojiť reálnu sieť so sieťou v emulátori mininet. Skript vytvorí TClink link1, pomocou ktorého dokážeme meniť priepustnosť linky. Zmenu v stanovených časových bodoch zabezpečuje framework minievents, do ktorého vstupuje ako argument JSON súbor s názvom bw.json, kde sú špecifikované udalosti „editlink“ a parametre ako linka ktorá sa má meniť, čas, kedy sa má daná udalosť nastať a hodnota priepustnosti, ktorá sa má nastaviť v link1.
 
 ![topology](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/topology.png)
 
