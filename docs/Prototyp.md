@@ -15,4 +15,4 @@ Zo stránky http://jell.yfish.us sme stiahli video, ktoré slúži na testovanie
 
 ## PC2 - Klient
 
-Na strane klienta sme prispôsobili bitmovin prehrávač pomocou html a javascriptu. Používame free trial verziu na 30 dní, ktorá postačuje na dodržanie termínu na odovzdanie už finálnej verzie produktu.
+Na strane klienta sme prispôsobili bitmovin prehrávač pomocou html a javascriptu. Používame free trial verziu na 30 dní, ktorá postačuje na dodržanie termínu na odovzdanie už finálnej verzie produktu. Klient dokáže vypísať do konzoly aktuálny bitrate prehráveného segmentu. 
