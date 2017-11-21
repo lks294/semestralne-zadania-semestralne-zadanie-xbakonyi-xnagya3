@@ -20,3 +20,6 @@ Zo stránky http://jell.yfish.us sme stiahli video, ktoré slúži na testovanie
 ## PC2 - Klient
 
 Na strane klienta sme prispôsobili bitmovin prehrávač pomocou html a javascriptu. Používame free trial verziu na 30 dní, ktorá postačuje na dodržanie termínu na odovzdanie už finálnej verzie produktu. Klient dokáže vypísať do konzoly aktuálny bitrate prehráveného segmentu. 
+
+## Testovací scenár počas jedno meranie bude bude trvať 120 sekúnd kde sa bude editovať linka pomocou mininevents a funkcie editlink kde po 30 sekundách zmeníme priepustnosť na 1,2,3 a zase 1 mb/s.
+![topology](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-xbakonyi-xnagya3/blob/master/docs/bandwith.png)
